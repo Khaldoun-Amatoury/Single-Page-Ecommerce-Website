@@ -2,9 +2,6 @@ import { useContext } from "react";
 
 import { CartContext } from "../store/shopping-cart-context";
 
-//here with help of context we don't need anymore to go to cartmodel and then app to updateitem quanity here with context we are direcly accessing the function from app.
-// export default function Cart({ items, onUpdateItemQuantity }) {
-// export default function Cart({ onUpdateItemQuantity }) {
 export default function Cart() {
   const { items, updateItemQuantity } = useContext(CartContext);
 
